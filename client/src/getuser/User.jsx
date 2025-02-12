@@ -42,7 +42,7 @@ function User() {
                         <th className='border-2 border-black '>ID</th>
                         <th className='border-2 border-black '>Name</th>
                         <th className='border-2 border-black '>Email</th>
-                        <th className='border-2 border-black '>Phone</th>
+                        <th className='border-2 border-black '>Address</th>
                         <th className='border-2 border-black '>Actions</th>
                     </tr>
                 </thead>
@@ -54,7 +54,7 @@ function User() {
                                 <td className='px-2 border-2 border-black '>{user.name}</td>
                                 <td className='px-2 border-2 border-black '>{user.email}</td>
                                 <td className='px-2 border-2 border-black '>{user.address}</td>
-                                <td className='px-2 border boder-black flex gap-4 '><Link to="/editUser" className="btn btn-primary">Edit</Link>
+                                <td className='px-2 border boder-black flex gap-4 '><Link to={`/editUser/${user._id}`} className="btn btn-primary">Edit</Link>
                                     <button className="btn btn-danger" onClick={() => deleteUser(user._id)}>Delete</button>
                                 </td>
                             </tr>
