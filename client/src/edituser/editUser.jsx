@@ -34,7 +34,7 @@ function AddUser() {
         <Link to="/" type='button' className='bg-purple-600 hover:bg-purple-400 px-4 py-2 rounded-full text-white font-bold'>
             Back
         </Link>
-        <h3 className='font-bold text-xl'> Add New User</h3>
+        <h3 className='font-bold text-xl'> Edit User</h3>
         <form className='border-black border-2 rounded-xl py-4 px-2 flex flex-col gap-4 items-center' onSubmit={submitForm}>
             <div className='flex gap-4'>
                 <label className='text-start  placeholder:border-2 placeholder:border-black text-md font-semibold' htmlFor='name'>Name:</label>
